@@ -15,7 +15,8 @@
                 },
               "lastName" : { "id" : "http://jsonschema.net/employee/lastName",
                   "required" : false,
-                  "type" : "string"
+                  "type" : "string",
+                  "decorator" : "nested"
                 }
             },
           "required" : false,

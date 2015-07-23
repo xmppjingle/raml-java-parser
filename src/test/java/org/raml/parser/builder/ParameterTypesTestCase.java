@@ -51,6 +51,7 @@ public class ParameterTypesTestCase extends AbstractRamlTestCase
     {
         QueryParameter nameParam = getParameter("name");
         assertThat(nameParam.getDisplayName(), is("name name"));
+        assertThat(nameParam.getDecorator(), is("nested"));
         assertThat(nameParam.getDescription(), is("name description"));
         assertThat(nameParam.getType(), is(STRING));
         assertThat(nameParam.getEnumeration().size(), is(3));

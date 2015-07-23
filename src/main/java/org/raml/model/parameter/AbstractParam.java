@@ -38,6 +38,9 @@ public class AbstractParam implements Serializable
     private String displayName;
 
     @Scalar
+    private String decorator;
+
+    @Scalar
     private String description;
 
     @Scalar
@@ -224,5 +227,13 @@ public class AbstractParam implements Serializable
             type = STRING;
         }
         return type.message(this, value);
+    }
+
+    public String getDecorator() {
+        return decorator;
+    }
+
+    public void setDecorator(String decorator) {
+        this.decorator = decorator;
     }
 }

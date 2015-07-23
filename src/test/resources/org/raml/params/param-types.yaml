@@ -9,6 +9,7 @@ title: param types
                 displayName: name name
                 description: name description
                 type: string
+                decorator: nested
                 enum:
                     - one
                     - two
